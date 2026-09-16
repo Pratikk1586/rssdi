@@ -1,0 +1,202 @@
+/**
+ * RSSDI-JHCON 2027 — PHASE 3 BASE ARCHITECTURE & ACCESSIBILITY
+ * Modern reset, fluid typography, smooth scrolling, focus indicators,
+ * and prefers-reduced-motion compliance.
+ */
+
+/* Modern CSS Reset & Layout Stability */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-sage-bg);
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(200, 224, 165, 0.35) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(239, 243, 221, 0.85) 0%, transparent 50%);
+  color: var(--color-text-main);
+  line-height: 1.6;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Defaults & Semantic Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-forest);
+  line-height: 1.15;
+  font-weight: var(--weight-bold);
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--color-forest);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-kelly);
+}
+
+/* Image Stability & CLS Prevention */
+img, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  touch-action: manipulation;
+}
+
+/* High Contrast Accessible Focus Ring */
+:focus-visible {
+  outline: 3px solid var(--color-kelly);
+  outline-offset: 3px;
+  border-radius: var(--radius-square-xs);
+}
+
+/* Minimum Touch Target for Touch Accessibility (WCAG 2.5.5) */
+button, a.btn, .schedule-tab-btn, .filter-btn, .gallery-card {
+  min-height: 44px;
+}
+
+/* Layout Containers */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 3.5vw, 1.75rem);
+}
+
+.container-narrow {
+  max-width: 960px;
+}
+
+.container-wide {
+  max-width: 1380px;
+}
+
+.section-spacing {
+  padding-block: clamp(3.5rem, 6vw, 6rem);
+  position: relative;
+}
+
+/* Section Header Typography */
+.section-header {
+  text-align: center;
+  max-width: 780px;
+  margin-inline: auto;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+  position: relative;
+  z-index: 2;
+}
+
+.section-header-left {
+  text-align: left;
+  margin-inline: 0;
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-kelly);
+  background: rgba(76, 154, 42, 0.1);
+  padding: 0.35rem 0.95rem;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-sm);
+  border: 1px solid rgba(76, 154, 42, 0.2);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--color-navy);
+  margin-bottom: var(--space-xs);
+  line-height: 1.08;
+}
+
+.section-subtitle {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  max-width: 640px;
+  margin-inline: auto;
+  line-height: 1.5;
+}
+
+/* Accessible Screen Reader Only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ==========================================================================
+   PREFERS-REDUCED-MOTION (Accessibility Compliance)
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  
+  .motif-block,
+  .motif-float-slow,
+  .motif-float-reverse,
+  .animate-entrance,
+  .reveal-on-scroll {
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}

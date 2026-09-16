@@ -1,0 +1,248 @@
+{
+  "event": {
+    "name": "RSSDI-JHCON 2027",
+    "edition": "6th Annual Conference",
+    "organisedBy": "RSSDI Jharkhand Chapter (Research Society for the Study of Diabetes in India)",
+    "dates": {
+      "formatted": "8th–9th–10th January 2027",
+      "startDate": "2027-01-08T09:00:00+05:30",
+      "endDate": "2027-01-10T18:00:00+05:30",
+      "days": [
+        { "day": "Day 1", "date": "8th January 2027", "dayOfWeek": "Friday" },
+        { "day": "Day 2", "date": "9th January 2027", "dayOfWeek": "Saturday" },
+        { "day": "Day 3", "date": "10th January 2027", "dayOfWeek": "Sunday" }
+      ]
+    },
+    "venue": {
+      "name": "The Cruze",
+      "locality": "Adityapur",
+      "city": "Jamshedpur",
+      "state": "Jharkhand",
+      "country": "India",
+      "fullAddress": "The Cruze, Adityapur, Jamshedpur, Jharkhand, India",
+      "photo": "assets/img/cruze.avif"
+    },
+    "taglineReferences": {
+      "primary": "The City of Steel — Jamshedpur"
+    }
+  },
+  "brand": {
+    "colors": {
+      "forestGreenRange": ["#1B4D2E", "#215732"],
+      "kellyGreenRange": ["#4C9A2A", "#6CB33F"],
+      "limeGreenRange": ["#A8D08D", "#C5E0A5"],
+      "creamSageRange": ["#F1F3E0", "#EFF3DD"],
+      "maroonRange": ["#7A1F1F", "#8C2A2A"],
+      "burntOrangeRange": ["#D9721E", "#E07B2A"],
+      "goldMustardRange": ["#E8B923", "#F0C33C"],
+      "deepNavy": "#1B2A4A",
+      "white": "#FFFFFF"
+    },
+    "logos": {
+      "rssdiCircularEmblem": {
+        "description": "RSSDI Jharkhand Chapter circular emblem — maroon/dark-red Jharkhand state silhouette centered inside a circular badge with 'RESEARCH SOCIETY FOR THE STUDY OF DIABETES IN INDIA' ringed text and 'RSSDI / Jharkhand Chapter' wordmark.",
+        "path": "assets/images/emblem_rssdi_circular.png"
+      },
+      "jharkhandTourismEmblem": {
+        "description": "Jharkhand tourism-style emblem — stylised illustration containing a waterfall, tribal figures (one holding a drum, one with bow), a tree, and industrial silhouettes (factory/mine), in green/orange tones with a sun.",
+        "path": "assets/images/emblem_jharkhand_tourism.png"
+      },
+      "conferenceIcon": {
+        "description": "6th Annual Conference icon — a glucose meter / testing device line-icon.",
+        "path": "assets/images/glucose_meter_icon.png"
+      },
+      "medicalMotif": {
+        "description": "Medical illustration of the pancreas and gallbladder (anatomical diagram — usable as a subtle brand motif for the 'diabetes/endocrine' theme, not as a hero image)",
+        "path": "assets/images/pancreas_anatomy.png"
+      }
+    }
+  },
+  "committees": {
+    "coreCommittee": [
+      { "role": "Org. Chairman", "name": "Dr. Umesh Khan" },
+      { "role": "Chairman Scientific", "name": "Dr. A. K. Virmani" },
+      { "role": "Org. Secretary", "name": "Dr. Soumya Sengupta" },
+      { "role": "Org. Treasurer", "name": "Dr. N. C. Singhal" },
+      { "role": "Finance", "name": "Dr. N. K. Das" }
+    ],
+    "fullOrganisingCommittee": [
+      { "role": "Patron", "members": ["Dr. N. K. Das", "Dr. H. S. Paul"], "category": "patron" },
+      { "role": "Advisor", "members": ["Dr. Dilip Kumar", "Dr. Nirmal Kumar", "Dr. R. L. Agarwal", "Dr. S. L. Srivastav"], "category": "advisor" },
+      { "role": "Org. Chairman", "members": ["Dr. Umesh Khan"], "category": "leadership" },
+      { "role": "Org. Vice Chairman", "members": ["Dr. Satish Prasad", "Dr. Nabidita Mishra"], "category": "leadership" },
+      { "role": "Chairman Scientific", "members": ["Dr. A. K. Virmani"], "category": "scientific" },
+      { "role": "Joint Chairman Scientific", "members": ["Dr. Ram Kumar"], "category": "scientific" },
+      { "role": "Chairman Finance", "members": ["Dr. N. K. Das"], "category": "finance" },
+      { "role": "Org. Secretary", "members": ["Dr. Soumya Sengupta"], "category": "secretariat" },
+      { "role": "Org. Joint Secretary", "members": ["Dr. A. K. Jaiswal", "Dr. G. Soren"], "category": "secretariat" },
+      { "role": "Org. Treasurer", "members": ["Dr. N. C. Singhal"], "category": "finance" },
+      { "role": "Org. Joint Treasurer", "members": ["Dr. Rohit Anand"], "category": "finance" },
+      { "role": "Chairman Media, Press & Souvenir", "members": ["Dr. A. K. Paul"], "category": "operational" },
+      { "role": "Chairman Audio, Visual & Hall", "members": ["Dr. A. K. Arya"], "category": "operational" },
+      { "role": "Chairman Food", "members": ["Dr. Dilip Kumar", "Dr. Rajesh Thakur"], "category": "operational" },
+      { "role": "Chairman Reception Programme", "members": ["Dr. Vijay Mundhra"], "category": "operational" },
+      { "role": "Chairman Travels", "members": ["Dr. S. K. Prasad"], "category": "operational" },
+      { "role": "Chairman Accommodation", "members": ["Dr. Harprit Singh"], "category": "operational" },
+      { "role": "Chairman Registration Committee", "members": ["Dr. R. L. Agarwal", "Dr. S. L. Srivastava"], "category": "operational" }
+    ]
+  },
+  "galleryItems": [
+    {
+      "id": 1,
+      "title": "Jubilee Amusement Park",
+      "badge": "Amusement Park",
+      "description": "Located inside Jubilee Park, offering family-friendly rides, vibrant landscaped gardens, and entertainment.",
+      "thumbnail": "assets/img/1.jpg",
+      "lightboxImages": [
+        "assets/img/1.2.png"
+      ],
+      "mapLink": "https://maps.app.goo.gl/aSGaEvP7h2XXv9tr8"
+    },
+    {
+      "id": 2,
+      "title": "Tata Steel",
+      "badge": "City of Steel",
+      "description": "The historic steel manufacturing plant founded by Jamsetji Tata in 1907, the industrial heartbeat of Jamshedpur.",
+      "thumbnail": "assets/img/2.png",
+      "lightboxImages": [
+        "assets/img/2.2.png"
+      ],
+      "mapLink": "https://maps.app.goo.gl/R8NgdG5PJA9r3G2h8"
+    },
+    {
+      "id": 3,
+      "title": "Tata Steel Zoological Park",
+      "badge": "Zoological Park",
+      "description": "A scenic wildlife sanctuary near Jubilee Park featuring diverse fauna, safari enclosures, and conservation programs.",
+      "thumbnail": "assets/img/3.png",
+      "lightboxImages": [
+        "assets/img/3.2.jpg"
+      ],
+      "mapLink": "https://maps.app.goo.gl/qa5kUwosXxcwSDjr6"
+    },
+    {
+      "id": 4,
+      "title": "Tata Steel Zoological Park",
+      "badge": "Nature & Safari",
+      "description": "Expansive nature trails and peaceful watersides adjoining the zoo, ideal for nature lovers and birdwatching.",
+      "thumbnail": "assets/img/4.jpeg",
+      "lightboxImages": [
+        "assets/img/4.2.png"
+      ],
+      "mapLink": "https://maps.app.goo.gl/qa5kUwosXxcwSDjr6"
+    },
+    {
+      "id": 5,
+      "title": "Sai Temple",
+      "badge": "Spiritual Heritage",
+      "description": "A peaceful and revered temple dedicated to Sri Shirdi Sai Baba, situated in the tranquil Circuit House area.",
+      "thumbnail": "assets/img/5.png",
+      "lightboxImages": [
+        "assets/img/5.3.png"
+      ],
+      "mapLink": "https://maps.app.goo.gl/dPn2z1KXyaVctwNy8"
+    },
+    {
+      "id": 6,
+      "title": "Nicco Jubilee park and Splash Zone",
+      "badge": "Water & Splash Zone",
+      "description": "A popular recreational attraction with wave pools, thrilling water slides, and fun entertainment for families.",
+      "thumbnail": "assets/img/6.png",
+      "lightboxImages": [
+        "assets/img/6.2.png"
+      ],
+      "mapLink": "https://maps.app.goo.gl/qNn4zh35DVXHd71J8"
+    },
+    {
+      "id": 7,
+      "title": "Russi Mody Center for Excellence",
+      "badge": "Heritage & Culture",
+      "description": "An architectural landmark preserving the archives, legacy, and industrial art collections of Tata Steel and Jamshedpur.",
+      "thumbnail": "assets/img/7.png",
+      "lightboxImages": [
+        "assets/img/7.2.png"
+      ],
+      "mapLink": "https://maps.app.goo.gl/auV3z9JoaENkjpjk9"
+    },
+    {
+      "id": 8,
+      "title": "Dalma Wildlife Sanctuary",
+      "badge": "Wildlife Sanctuary",
+      "description": "Sprawling deciduous forest across the Dalma hills, famous for its native elephant habitat and breathtaking viewpoints.",
+      "thumbnail": "assets/img/8.png",
+      "lightboxImages": [
+        "assets/img/8.2.png"
+      ],
+      "mapLink": "https://maps.app.goo.gl/WPiT8BsQTvco4zFk9"
+    }
+  ],
+  "placeholders": {
+    "speakers": {
+      "status": "Coming Soon",
+      "title": "Faculty & Speakers",
+      "notice": "Faculty list to be announced — awaiting official content"
+    },
+    "scientificProgramme": {
+      "status": "Coming Soon",
+      "title": "Scientific Programme",
+      "notice": "Detailed session-wise schedule to be announced — awaiting official content",
+      "days": [
+        {
+          "id": "day-1",
+          "label": "Day 1",
+          "date": "Friday, 8th January 2027",
+          "status": "Programme to be announced",
+          "notice": "// PLACEHOLDER — awaiting official content",
+          "sessions": [
+            { "slot": "Morning", "title": "Delegate Registration & Welcome Desk", "type": "Administrative" },
+            { "slot": "Mid-Morning", "title": "Inaugural Ceremony & Presidential Address", "type": "Ceremonial" },
+            { "slot": "Afternoon", "title": "Thematic Scientific Symposia — Track A & B", "type": "Academic" },
+            { "slot": "Evening", "title": "Inaugural Dinner & Welcome Gathering", "type": "Social" }
+          ]
+        },
+        {
+          "id": "day-2",
+          "label": "Day 2",
+          "date": "Saturday, 9th January 2027",
+          "status": "Programme to be announced",
+          "notice": "// PLACEHOLDER — awaiting official content",
+          "sessions": [
+            { "slot": "Morning", "title": "Keynote Lectures & Plenary Addresses", "type": "Academic" },
+            { "slot": "Mid-Day", "title": "Cardio-Renal & Metabolic Clinical Updates", "type": "Clinical" },
+            { "slot": "Afternoon", "title": "Oral & Poster Paper Submissions", "type": "Research" },
+            { "slot": "Evening", "title": "RSSDI Jharkhand Chapter General Assembly", "type": "Chapter" }
+          ]
+        },
+        {
+          "id": "day-3",
+          "label": "Day 3",
+          "date": "Sunday, 10th January 2027",
+          "status": "Programme to be announced",
+          "notice": "// PLACEHOLDER — awaiting official content",
+          "sessions": [
+            { "slot": "Morning", "title": "Clinical Masterclasses & Case Deliberations", "type": "Masterclass" },
+            { "slot": "Mid-Day", "title": "Panel Discussion: Future of Diabetes Care", "type": "Symposium" },
+            { "slot": "Afternoon", "title": "Valedictory Session & Awards Ceremony", "type": "Concluding" }
+          ]
+        }
+      ]
+    },
+    "registration": {
+      "status": "Registration Active",
+      "title": "Registration Tariffs",
+      "notice": "Official delegate registration tariffs for RSSDI-JHCON 2027",
+      "razorpayUrl": "https://pages.razorpay.com/rssdi-jhcon-2027",
+      "ctaText": "Click Here to Register",
+      "categories": [
+        { "category": "Delegates", "eligibility": "RSSDI members & registered conference delegates", "rate": 1500, "formattedRate": "₹1,500", "status": "Confirmed" },
+        { "category": "Delegates with Accompanying Person", "eligibility": "Registered delegate accompanied by spouse or guest", "rate": 2000, "formattedRate": "₹2,000", "status": "Confirmed" },
+        { "category": "Postgraduate Student", "eligibility": "MD / DNB / DM postgraduates & residents with ID", "rate": 1000, "formattedRate": "₹1,000", "status": "Confirmed" }
+      ]
+    },
+    "contact": {
+      "status": "To Be Updated",
+      "title": "Conference Secretariat & Desk",
+      "notice": "Official contact phone/email to be updated — awaiting official content"
+    }
+  }
+}

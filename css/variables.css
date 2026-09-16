@@ -1,0 +1,129 @@
+/**
+ * RSSDI-JHCON 2027 — PHASE 1 DESIGN SYSTEM TOKENS
+ * Semantic color tokens, typography scales, rounded-square radii, and shadow architecture
+ */
+
+:root {
+  /* ========================================================================
+     1. Semantic Color Tokens (Extracted directly from Brochure)
+     ======================================================================== */
+  
+  /* Deep forest green (#1B4D2E to #215732 range) */
+  --color-forest: #1B4D2E;
+  --color-forest-dark: #163E24;
+  --color-forest-light: #215732;
+
+  /* Medium/kelly green (#4C9A2A to #6CB33F range) */
+  --color-kelly: #4C9A2A;
+  --color-kelly-bright: #6CB33F;
+
+  /* Light/lime green (#A8D08D to #C5E0A5 range) */
+  --color-lime: #A8D08D;
+  --color-lime-soft: #C5E0A5;
+  --color-lime-tint: #E2F0D9;
+
+  /* Cream / pale sage background (#F1F3E0 to #EFF3DD range) */
+  --color-cream-bg: #EFF3DD;
+  --color-cream-wash: #F1F3E0;
+  --color-cream-card: #FAFBF5;
+
+  /* Maroon / brick red (#7A1F1F to #8C2A2A range) */
+  --color-maroon: #7A1F1F;
+  --color-maroon-dark: #661616;
+  --color-maroon-light: #8C2A2A;
+
+  /* Burnt orange (#D9721E to #E07B2A range) */
+  --color-burnt-orange: #D9721E;
+  --color-burnt-orange-bright: #E07B2A;
+  --color-burnt-orange-soft: rgba(217, 114, 30, 0.12);
+
+  /* Gold / mustard yellow (#E8B923 to #F0C33C range) */
+  --color-gold: #E8B923;
+  --color-gold-bright: #F0C33C;
+  --color-gold-dark: #C69510;
+  --color-gold-ribbon: #FFD43F;
+
+  /* Deep navy (#1B2A4A range) */
+  --color-navy: #1B2A4A;
+  --color-navy-dark: #101B33;
+
+  /* White & Neutrals */
+  --color-white: #FFFFFF;
+  --color-card-bg: #FFFFFF;
+  --color-text-main: #1C2826;
+  --color-text-muted: #4A5568;
+  --color-text-light: #718096;
+  --color-border: #DCE5CB;
+  --color-border-light: #EBF0DF;
+
+  /* ========================================================================
+     2. Typography Scale
+     ======================================================================== */
+  --font-display: 'Barlow Condensed', 'Oswald', -apple-system, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-script: 'Alex Brush', 'Playfair Display', Georgia, cursive;
+  --font-serif: 'Playfair Display', Georgia, serif;
+
+  /* Font Weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+  --weight-black: 900;
+
+  /* Type Scale */
+  --text-xs: clamp(0.72rem, 1vw, 0.78rem);
+  --text-sm: clamp(0.84rem, 1.2vw, 0.9rem);
+  --text-base: clamp(0.95rem, 1.4vw, 1.05rem);
+  --text-md: clamp(1.1rem, 1.8vw, 1.25rem);
+  --text-lg: clamp(1.3rem, 2.2vw, 1.55rem);
+  --text-xl: clamp(1.6rem, 3vw, 2.1rem);
+  --text-2xl: clamp(2.2rem, 4.5vw, 3.2rem);
+  --text-hero: clamp(3.2rem, 7.5vw, 5.8rem);
+
+  /* ========================================================================
+     3. Spacing Scale
+     ======================================================================== */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 5rem;
+  --space-4xl: 7rem;
+
+  /* ========================================================================
+     4. Border Radius Scale (Informed by Rounded-Square Confetti Motif)
+     ======================================================================== */
+  --radius-square-xs: 6px;
+  --radius-square-sm: 10px;
+  --radius-square-md: 14px;
+  --radius-square-lg: 20px;
+  --radius-square-xl: 28px;
+  --radius-full: 9999px;
+
+  /* ========================================================================
+     5. Shadow System
+     ======================================================================== */
+  --shadow-sm: 0 2px 6px rgba(27, 77, 46, 0.06);
+  --shadow-md: 0 6px 18px rgba(27, 77, 46, 0.09);
+  --shadow-lg: 0 12px 32px rgba(27, 77, 46, 0.12);
+  --shadow-xl: 0 20px 48px rgba(27, 77, 46, 0.16);
+  --shadow-gold: 0 8px 24px rgba(232, 185, 35, 0.35);
+  --shadow-forest: 0 8px 24px rgba(27, 77, 46, 0.25);
+
+  /* ========================================================================
+     6. Motion & Animation Tokens
+     ======================================================================== */
+  --transition-fast: 180ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 450ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Breakpoint Variables (For CSS documentation reference) */
+  --bp-mobile: 640px;
+  --bp-tablet: 1024px;
+  --bp-desktop: 1280px;
+}
