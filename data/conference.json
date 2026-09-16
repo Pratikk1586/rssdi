@@ -177,56 +177,6 @@
     }
   ],
   "placeholders": {
-    "speakers": {
-      "status": "Coming Soon",
-      "title": "Faculty & Speakers",
-      "notice": "Faculty list to be announced — awaiting official content"
-    },
-    "scientificProgramme": {
-      "status": "Coming Soon",
-      "title": "Scientific Programme",
-      "notice": "Detailed session-wise schedule to be announced — awaiting official content",
-      "days": [
-        {
-          "id": "day-1",
-          "label": "Day 1",
-          "date": "Friday, 8th January 2027",
-          "status": "Programme to be announced",
-          "notice": "// PLACEHOLDER — awaiting official content",
-          "sessions": [
-            { "slot": "Morning", "title": "Delegate Registration & Welcome Desk", "type": "Administrative" },
-            { "slot": "Mid-Morning", "title": "Inaugural Ceremony & Presidential Address", "type": "Ceremonial" },
-            { "slot": "Afternoon", "title": "Thematic Scientific Symposia — Track A & B", "type": "Academic" },
-            { "slot": "Evening", "title": "Inaugural Dinner & Welcome Gathering", "type": "Social" }
-          ]
-        },
-        {
-          "id": "day-2",
-          "label": "Day 2",
-          "date": "Saturday, 9th January 2027",
-          "status": "Programme to be announced",
-          "notice": "// PLACEHOLDER — awaiting official content",
-          "sessions": [
-            { "slot": "Morning", "title": "Keynote Lectures & Plenary Addresses", "type": "Academic" },
-            { "slot": "Mid-Day", "title": "Cardio-Renal & Metabolic Clinical Updates", "type": "Clinical" },
-            { "slot": "Afternoon", "title": "Oral & Poster Paper Submissions", "type": "Research" },
-            { "slot": "Evening", "title": "RSSDI Jharkhand Chapter General Assembly", "type": "Chapter" }
-          ]
-        },
-        {
-          "id": "day-3",
-          "label": "Day 3",
-          "date": "Sunday, 10th January 2027",
-          "status": "Programme to be announced",
-          "notice": "// PLACEHOLDER — awaiting official content",
-          "sessions": [
-            { "slot": "Morning", "title": "Clinical Masterclasses & Case Deliberations", "type": "Masterclass" },
-            { "slot": "Mid-Day", "title": "Panel Discussion: Future of Diabetes Care", "type": "Symposium" },
-            { "slot": "Afternoon", "title": "Valedictory Session & Awards Ceremony", "type": "Concluding" }
-          ]
-        }
-      ]
-    },
     "registration": {
       "status": "Registration Active",
       "title": "Registration Tariffs",

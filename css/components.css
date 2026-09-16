@@ -255,285 +255,7 @@
 }
 
 /* ==========================================================================
-   4. INTERACTIVE SCHEDULE TABS & TIMELINE COMPONENT (Day 1 / Day 2 / Day 3)
-   Enhanced Presentation, Visual Hierarchy, and Mobile Timeline Flow
-   ========================================================================== */
-
-.schedule-container {
-  max-width: 960px;
-  margin-inline: auto;
-  background: var(--color-white);
-  border-radius: var(--radius-square-xl);
-  border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-md);
-  overflow: hidden;
-}
-
-.schedule-tabs-bar {
-  display: flex;
-  background: var(--color-cream-wash);
-  border-bottom: 2px solid var(--color-border);
-  overflow-x: auto;
-  scrollbar-width: thin;
-}
-
-.schedule-tab-btn {
-  flex: 1;
-  min-width: 200px;
-  padding: 1.25rem 1rem;
-  text-align: center;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  border-bottom: 3.5px solid transparent;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.3rem;
-  position: relative;
-}
-
-.schedule-tab-btn:hover {
-  background: rgba(76, 154, 42, 0.08);
-}
-
-.schedule-tab-btn.active {
-  background: var(--color-white);
-  border-bottom-color: var(--color-kelly);
-  box-shadow: 0 4px 14px rgba(27, 77, 46, 0.06);
-}
-
-.schedule-tab-label {
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: var(--weight-extrabold);
-  color: var(--color-forest);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  line-height: 1.1;
-}
-
-.schedule-tab-btn.active .schedule-tab-label {
-  color: var(--color-kelly);
-}
-
-.schedule-tab-date {
-  font-size: 0.8rem;
-  font-weight: var(--weight-semibold);
-  color: var(--color-text-muted);
-}
-
-.schedule-tab-btn.active .schedule-tab-date {
-  color: var(--color-forest-dark);
-}
-
-.schedule-content-panel {
-  padding: clamp(1.5rem, 3.5vw, 2.75rem);
-  display: none;
-  animation: fadeInPanel 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-.schedule-content-panel.active {
-  display: block;
-}
-
-.schedule-panel-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  padding-bottom: 1.25rem;
-  border-bottom: 1px solid var(--color-border-light);
-}
-
-.schedule-panel-title {
-  font-family: var(--font-display);
-  font-size: 1.45rem;
-  color: var(--color-navy);
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  margin-bottom: 0.35rem;
-}
-
-.schedule-panel-sub {
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
-  max-width: 620px;
-}
-
-/* Timeline Layout */
-.schedule-timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  position: relative;
-}
-
-.timeline-slot {
-  display: flex;
-  align-items: stretch;
-  gap: 1.5rem;
-  transition: transform var(--transition-fast);
-}
-
-.slot-time-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 120px;
-  flex-shrink: 0;
-  position: relative;
-}
-
-.slot-time-badge {
-  font-family: var(--font-display);
-  font-size: 0.95rem;
-  font-weight: var(--weight-bold);
-  color: var(--color-forest-dark);
-  background: var(--color-cream-wash);
-  padding: 0.5rem 0.85rem;
-  border-radius: var(--radius-square-sm);
-  border: 1.5px solid var(--color-border);
-  text-align: center;
-  width: 100%;
-  box-shadow: var(--shadow-xs);
-  letter-spacing: 0.03em;
-}
-
-.slot-time-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--color-kelly);
-  margin-top: 0.75rem;
-  box-shadow: 0 0 0 4px rgba(76, 154, 42, 0.2);
-}
-
-.slot-details {
-  flex-grow: 1;
-  background: var(--color-cream-card);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-square-md);
-  padding: 1.15rem 1.4rem;
-  transition: all var(--transition-fast);
-  box-shadow: var(--shadow-xs);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.timeline-slot:hover .slot-details {
-  border-color: var(--color-kelly);
-  background: var(--color-white);
-  box-shadow: var(--shadow-sm);
-  transform: translateX(4px);
-}
-
-.slot-header-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.slot-title {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: var(--weight-bold);
-  color: var(--color-navy);
-  margin: 0;
-  line-height: 1.3;
-}
-
-.slot-type-badge {
-  font-size: 0.72rem;
-  font-weight: var(--weight-bold);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  padding: 0.25rem 0.65rem;
-  border-radius: var(--radius-full);
-  white-space: nowrap;
-}
-
-.slot-type-admin     { background: rgba(27, 42, 74, 0.1); color: var(--color-navy); }
-.slot-type-ceremony  { background: rgba(232, 185, 35, 0.18); color: #8A6400; }
-.slot-type-academic  { background: rgba(27, 77, 46, 0.12); color: var(--color-forest); }
-.slot-type-social    { background: rgba(217, 114, 30, 0.14); color: var(--color-burnt-orange); }
-.slot-type-clinical  { background: rgba(76, 154, 42, 0.14); color: var(--color-kelly); }
-.slot-type-research  { background: rgba(122, 31, 31, 0.12); color: var(--color-maroon); }
-.slot-type-chapter   { background: rgba(27, 77, 46, 0.14); color: var(--color-forest-dark); }
-.slot-type-master    { background: rgba(76, 154, 42, 0.18); color: var(--color-forest-dark); font-weight: 800; }
-.slot-type-symposium { background: rgba(232, 185, 35, 0.22); color: #7A5500; }
-.slot-type-concluding{ background: rgba(217, 114, 30, 0.18); color: var(--color-burnt-orange); }
-
-.slot-pending-notice {
-  font-size: 0.76rem;
-  color: var(--color-text-light);
-  margin-top: 0.4rem;
-  font-style: italic;
-}
-
-/* ==========================================================================
-   5. SPEAKER & FACULTY SHELL COMPONENT
-   ========================================================================== */
-
-.speaker-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.speaker-shell-card {
-  background: var(--color-white);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-square-lg);
-  padding: 1.75rem 1.25rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: var(--shadow-sm);
-  transition: all var(--transition-normal);
-}
-
-.speaker-shell-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--color-lime);
-}
-
-.speaker-avatar-silhouette {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: var(--color-cream-wash);
-  border: 2px dashed var(--color-border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  color: var(--color-text-muted);
-  margin-bottom: 1rem;
-}
-
-.speaker-status-notice {
-  font-size: 0.78rem;
-  font-weight: var(--weight-bold);
-  text-transform: uppercase;
-  color: var(--color-burnt-orange);
-  background: var(--color-burnt-orange-soft);
-  padding: 0.25rem 0.75rem;
-  border-radius: var(--radius-full);
-  margin-bottom: 0.5rem;
-}
-
-/* ==========================================================================
-   6. REGISTRATION: 5 PRICING CATEGORIES & CANONICAL RAZORPAY CTA
+   4. REGISTRATION: 3 PRICING CATEGORIES & CANONICAL RAZORPAY CTA
    ========================================================================== */
 
 .pricing-cards-grid {
@@ -812,7 +534,7 @@
 }
 
 /* ==========================================================================
-   8. VENUE MAP PLACEHOLDER COMPONENT
+   5. VENUE MAP PLACEHOLDER COMPONENT
    ========================================================================== */
 
 .venue-map-frame {
@@ -848,7 +570,7 @@
 }
 
 /* ==========================================================================
-   9. SCROLL REVEAL ANIMATIONS (Restrained & Professional)
+   6. SCROLL REVEAL ANIMATIONS (Restrained & Professional)
    ========================================================================== */
 
 .reveal-on-scroll {
@@ -871,7 +593,7 @@
 .reveal-delay-4 { transition-delay: 0.4s; }
 
 /* ==========================================================================
-   10. REUSABLE ROUNDED-SQUARE CONFETTI MOTIF
+   7. REUSABLE ROUNDED-SQUARE CONFETTI MOTIF
    ========================================================================== */
 
 .motif-block-cluster {
@@ -914,7 +636,7 @@
 .motif-float-reverse { animation: motifDriftB 9s ease-in-out infinite; }
 
 /* ==========================================================================
-   11. BADGES & PILLS
+   8. BADGES & PILLS
    ========================================================================== */
 
 .badge-pill {
@@ -950,7 +672,7 @@
 }
 
 /* ==========================================================================
-   12. MODALS, LIGHTBOX & TOAST OVERLAYS
+   9. MODALS, LIGHTBOX & TOAST OVERLAYS
    ========================================================================== */
 
 .modal-backdrop {

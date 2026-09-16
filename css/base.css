@@ -87,7 +87,7 @@ button {
 }
 
 /* Minimum Touch Target for Touch Accessibility (WCAG 2.5.5) */
-button, a.btn, .schedule-tab-btn, .filter-btn, .gallery-card {
+button, a.btn, .filter-btn, .gallery-card {
   min-height: 44px;
 }
 

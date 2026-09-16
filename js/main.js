@@ -24,6 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  /* ==========================================================================
+     2. Live Countdown Timer (8th January 2027, 09:00:00 IST)
+     ========================================================================== */
+  let targetEventTime = new Date('2027-01-08T09:00:00+05:30').getTime();
+
   function initDataDrivenComponents(data) {
     if (data?.event?.dates?.startDate) {
       targetEventTime = new Date(data.event.dates.startDate).getTime();
@@ -32,11 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   loadConferenceData();
-
-  /* ==========================================================================
-     2. Live Countdown Timer (8th January 2027, 09:00:00 IST)
-     ========================================================================== */
-  let targetEventTime = new Date('2027-01-08T09:00:00+05:30').getTime();
 
   function updateCountdown() {
     const now = new Date().getTime();
@@ -95,60 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ==========================================================================
-     4. Accessible Schedule Tabs Component (Day 1 / Day 2 / Day 3)
-     Includes keyboard arrow navigation (WAI-ARIA Tab Pattern)
-     ========================================================================== */
-  const scheduleTabBtns = Array.from(document.querySelectorAll('.schedule-tab-btn'));
-  const schedulePanels = document.querySelectorAll('.schedule-content-panel');
-
-  function switchScheduleTab(btn) {
-    const tabTarget = btn.getAttribute('data-schedule-tab');
-    if (!tabTarget) return;
-
-    scheduleTabBtns.forEach(b => {
-      b.classList.remove('active');
-      b.setAttribute('aria-selected', 'false');
-      b.setAttribute('tabindex', '-1');
-    });
-    btn.classList.add('active');
-    btn.setAttribute('aria-selected', 'true');
-    btn.setAttribute('tabindex', '0');
-    btn.focus();
-
-    schedulePanels.forEach(panel => {
-      panel.classList.remove('active');
-    });
-
-    const activePanel = document.getElementById(`panel-${tabTarget}`);
-    if (activePanel) {
-      activePanel.classList.add('active');
-    }
-  }
-
-  scheduleTabBtns.forEach((btn, index) => {
-    btn.addEventListener('click', () => switchScheduleTab(btn));
-
-    btn.addEventListener('keydown', (e) => {
-      let targetIndex = -1;
-      if (e.key === 'ArrowRight') {
-        targetIndex = (index + 1) % scheduleTabBtns.length;
-      } else if (e.key === 'ArrowLeft') {
-        targetIndex = (index - 1 + scheduleTabBtns.length) % scheduleTabBtns.length;
-      } else if (e.key === 'Home') {
-        targetIndex = 0;
-      } else if (e.key === 'End') {
-        targetIndex = scheduleTabBtns.length - 1;
-      }
-
-      if (targetIndex !== -1) {
-        e.preventDefault();
-        switchScheduleTab(scheduleTabBtns[targetIndex]);
-      }
-    });
-  });
-
-  /* ==========================================================================
-     5. Sticky Navbar: Transparent-over-Hero -> Solid & Scrollspy
+     4. Sticky Navbar: Transparent-over-Hero -> Solid & Scrollspy
      ========================================================================== */
   const header = document.getElementById('site-header');
   const backToTop = document.getElementById('back-to-top');
@@ -201,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ==========================================================================
-     6. Accessible Mobile Hamburger Drawer
+     5. Accessible Mobile Hamburger Drawer
      ========================================================================== */
   const mobileToggle = document.getElementById('mobile-toggle');
   const mobileDrawer = document.getElementById('mobile-drawer');
@@ -244,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ==========================================================================
-     7. Committee Directory Filter Tabs & Live Search
+     6. Committee Directory Filter Tabs & Live Search
      ========================================================================== */
   const filterBtns = document.querySelectorAll('.filter-btn');
   const memberCards = document.querySelectorAll('.committee-member-card');
@@ -317,7 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ==========================================================================
-     8. Toast Notification Utility
+     7. Toast Notification Utility
      ========================================================================== */
   let toastTimeout;
   function showToast(message) {
