@@ -181,7 +181,7 @@
       "status": "Registration Active",
       "title": "Registration Tariffs",
       "notice": "Official delegate registration tariffs for RSSDI-JHCON 2027",
-      "razorpayUrl": "https://pages.razorpay.com/rssdi-jhcon-2027",
+      "razorpayUrl": "https://pages.razorpay.com/rssdijh27",
       "ctaText": "Click Here to Register",
       "categories": [
         { "category": "Delegates", "eligibility": "RSSDI members & registered conference delegates", "rate": 1500, "formattedRate": "₹1,500", "status": "Confirmed" },
