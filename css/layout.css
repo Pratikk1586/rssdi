@@ -1443,6 +1443,26 @@
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
   }
+
+  .nav-link {
+    font-size: 0.82rem;
+    padding: 0.35rem 0.45rem;
+  }
+
+  .brand-subtext,
+  .brand-dot {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
 }
 
 /* Desktop default for committee collapsible wrapper */
