@@ -24,6 +24,13 @@
     },
     "taglineReferences": {
       "primary": "The City of Steel — Jamshedpur"
+    },
+    "organisingPartner": {
+      "name": "Nanak Creation",
+      "role": "Official Event Organising Partner",
+      "phone": "+91 93864 33330",
+      "address": "Plot No - 644, Nirman Sai, Baliguma, Dimna, Jamshedpur",
+      "logo": "assets/images/nanak_creation_logo.png"
     }
   },
   "brand": {
@@ -180,13 +187,16 @@
     "registration": {
       "status": "Registration Active",
       "title": "Registration Tariffs",
-      "notice": "Official delegate registration tariffs for RSSDI-JHCON 2027",
+      "notice": "The current registration fees are valid until 15 November 2026. From 16 November 2026 onwards, the registration fees will increase by ₹500.",
+      "deadline": "2026-11-15",
+      "deadlineFormatted": "15 November 2026",
+      "lateFeeIncrement": 500,
       "razorpayUrl": "https://pages.razorpay.com/rssdijh27",
       "ctaText": "Click Here to Register",
       "categories": [
-        { "category": "Delegates", "eligibility": "RSSDI members & registered conference delegates", "rate": 1500, "formattedRate": "₹1,500", "status": "Confirmed" },
-        { "category": "Delegates with Accompanying Person", "eligibility": "Registered delegate accompanied by spouse or guest", "rate": 2000, "formattedRate": "₹2,000", "status": "Confirmed" },
-        { "category": "Postgraduate Student", "eligibility": "MD / DNB / DM postgraduates & residents with ID", "rate": 1000, "formattedRate": "₹1,000", "status": "Confirmed" }
+        { "category": "Delegates", "eligibility": "RSSDI members & registered conference delegates", "rate": 2000, "formattedRate": "₹2,000", "postDeadlineRate": 2500, "status": "Confirmed" },
+        { "category": "Accompanying Person", "eligibility": "Registered delegate accompanied by spouse or guest", "rate": 2500, "formattedRate": "₹2,500", "postDeadlineRate": 3000, "status": "Confirmed" },
+        { "category": "PG Student", "eligibility": "MD / DNB / DM postgraduates & residents with ID", "rate": 1500, "formattedRate": "₹1,500", "postDeadlineRate": 2000, "status": "Confirmed" }
       ]
     },
     "contact": {

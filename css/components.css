@@ -258,6 +258,99 @@
    4. REGISTRATION: 3 PRICING CATEGORIES & CANONICAL RAZORPAY CTA
    ========================================================================== */
 
+/* Prominent Registration Deadline Banner */
+.registration-deadline-banner {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: linear-gradient(135deg, #FFFDF5 0%, #FEF8E8 50%, #FDF2D5 100%);
+  border: 1.5px solid #E6BF55;
+  border-left: 6px solid var(--color-burnt-orange);
+  border-radius: var(--radius-square-md);
+  padding: 1.25rem 1.75rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 18px rgba(217, 114, 30, 0.12);
+  position: relative;
+  max-width: 1060px;
+  margin-inline: auto;
+}
+
+.deadline-banner-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--color-burnt-orange), #BD5508);
+  color: var(--color-white);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(217, 114, 30, 0.35);
+}
+
+.deadline-banner-content {
+  flex: 1;
+}
+
+.deadline-banner-headline {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: var(--weight-extrabold);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #8C3B07;
+  margin-bottom: 0.25rem;
+}
+
+.deadline-banner-text {
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: #3D2608;
+  margin: 0;
+}
+
+.deadline-banner-text strong {
+  color: #9E3500;
+  font-weight: var(--weight-extrabold);
+}
+
+.deadline-banner-badge {
+  flex-shrink: 0;
+  background: #C25B0E;
+  color: #FFFFFF;
+  padding: 0.45rem 1.1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px rgba(194, 91, 14, 0.35);
+  white-space: nowrap;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #FFD43F;
+  box-shadow: 0 0 0 0 rgba(255, 212, 63, 0.7);
+  animation: pulse-ring 1.8s infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 212, 63, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(255, 212, 63, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 212, 63, 0);
+  }
+}
+
 .pricing-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -356,6 +449,22 @@
   color: var(--color-burnt-orange);
   font-style: italic;
   font-weight: var(--weight-semibold);
+  margin-top: 2px;
+}
+
+.tier-subnote {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--color-burnt-orange);
+  font-weight: var(--weight-semibold);
+  margin-top: 1px;
+}
+
+.tier-table-sub {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--color-burnt-orange);
+  font-weight: var(--weight-medium);
   margin-top: 2px;
 }
 
@@ -913,4 +1022,347 @@
 .back-to-top-btn:hover {
   background: var(--color-kelly);
   transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   ENHANCED FOOTER DESIGN SYSTEM
+   ========================================================================== */
+
+/* Brand & Emblems */
+.footer-brand-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-emblems-row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.footer-emblem-badge {
+  background: #FFFFFF;
+  border-radius: 50%;
+  padding: 3px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.footer-emblem-badge-rect {
+  border-radius: 8px;
+  padding: 3px 6px;
+}
+
+.footer-brand-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.45rem;
+}
+
+.footer-brand-title {
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  margin: 0;
+}
+
+.footer-brand-title .gold-accent {
+  color: var(--color-gold-bright);
+}
+
+.footer-edition-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: rgba(232, 185, 35, 0.15);
+  color: var(--color-gold-bright);
+  border: 1px solid rgba(232, 185, 35, 0.35);
+  padding: 0.2rem 0.55rem;
+  border-radius: 50px;
+}
+
+.footer-brand-desc {
+  font-size: 0.84rem;
+  color: rgba(239, 243, 221, 0.82);
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+}
+
+.footer-event-pills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+}
+
+.footer-event-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: rgba(239, 243, 221, 0.92);
+}
+
+.footer-event-pill strong {
+  color: var(--color-gold-bright);
+}
+
+/* Section Column Headings */
+.footer-col-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-gold-bright);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding-bottom: 0.4rem;
+  display: inline-block;
+}
+
+.footer-col-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 28px;
+  height: 2px;
+  background: var(--color-gold-bright);
+  border-radius: 2px;
+}
+
+/* Quick Links List */
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.footer-links-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: rgba(239, 243, 221, 0.85);
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.footer-links-list a::before {
+  content: '›';
+  color: var(--color-gold);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+  transition: transform var(--transition-fast);
+}
+
+.footer-links-list a:hover {
+  color: #FFFFFF;
+  transform: translateX(4px);
+}
+
+.footer-links-list a:hover::before {
+  color: var(--color-gold-bright);
+  transform: translateX(2px);
+}
+
+/* Leadership Structured List */
+.footer-leadership-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.footer-leader-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+  padding-bottom: 0.45rem;
+}
+
+.footer-leader-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.leader-role {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-gold);
+  font-weight: 700;
+}
+
+.leader-name {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+/* Conference Desk Column Card */
+.footer-desk-box {
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-square-md);
+  padding: 1.15rem;
+}
+
+.footer-desk-desc {
+  font-size: 0.82rem;
+  color: rgba(239, 243, 221, 0.82);
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+}
+
+.footer-desk-trust {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  color: var(--color-gold);
+  margin-top: 0.65rem;
+}
+
+/* Compact Event Organising Partner Bar */
+.footer-partner-bar-wrap {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-partner-bar {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1.5px solid rgba(232, 185, 35, 0.35);
+  border-radius: var(--radius-square-md);
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all var(--transition-normal);
+}
+
+.footer-partner-bar:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.04) 100%);
+  border-color: var(--color-gold-bright);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28), 0 0 16px rgba(232, 185, 35, 0.15);
+}
+
+.partner-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.partner-bar-logo-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(232, 185, 35, 0.5);
+  flex-shrink: 0;
+}
+
+.partner-bar-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  display: block;
+}
+
+.partner-bar-brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.partner-bar-name {
+  font-family: var(--font-display);
+  font-size: 1.22rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: 0.02em;
+}
+
+.partner-bar-role {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-gold-bright);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.partner-bar-divider {
+  width: 1px;
+  height: 36px;
+  background: linear-gradient(180deg, transparent, rgba(232, 185, 35, 0.5), transparent);
+  flex-shrink: 0;
+}
+
+.partner-bar-contact {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  font-size: 0.85rem;
+  color: rgba(239, 243, 221, 0.9);
+  flex-wrap: wrap;
+}
+
+.partner-bar-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: rgba(239, 243, 221, 0.9);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.partner-phone-btn {
+  background: rgba(232, 185, 35, 0.15);
+  border: 1px solid rgba(232, 185, 35, 0.4);
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.partner-phone-btn:hover {
+  background: var(--color-gold);
+  color: #111111 !important;
+  border-color: var(--color-gold-bright);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(232, 185, 35, 0.3);
+}
+
+.partner-bar-icon {
+  font-size: 0.95rem;
+  flex-shrink: 0;
 }
