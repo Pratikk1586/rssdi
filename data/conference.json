@@ -194,9 +194,9 @@
       "razorpayUrl": "https://pages.razorpay.com/rssdijh27",
       "ctaText": "Click Here to Register",
       "categories": [
-        { "category": "Delegates", "eligibility": "RSSDI members & registered conference delegates", "rate": 2000, "formattedRate": "₹2,000", "postDeadlineRate": 2500, "status": "Confirmed" },
-        { "category": "Accompanying Person", "eligibility": "Registered delegate accompanied by spouse or guest", "rate": 2500, "formattedRate": "₹2,500", "postDeadlineRate": 3000, "status": "Confirmed" },
-        { "category": "PG Student", "eligibility": "MD / DNB / DM postgraduates & residents with ID", "rate": 1500, "formattedRate": "₹1,500", "postDeadlineRate": 2000, "status": "Confirmed" }
+        { "category": "Delegates", "eligibility": "RSSDI members & registered conference delegates", "rate": 1500, "formattedRate": "₹1,500", "postDeadlineRate": 2000, "status": "Confirmed" },
+        { "category": "Accompanying Person", "eligibility": "Registered delegate accompanied by spouse or guest", "rate": 2000, "formattedRate": "₹2,000", "postDeadlineRate": 2500, "status": "Confirmed" },
+        { "category": "PG Student", "eligibility": "MD / DNB / DM postgraduates & residents with ID", "rate": 1000, "formattedRate": "₹1,000", "postDeadlineRate": 1500, "status": "Confirmed" }
       ]
     },
     "contact": {
