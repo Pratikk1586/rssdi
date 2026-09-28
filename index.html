@@ -154,7 +154,13 @@
         <span class="maroon">RSSDI</span><span class="forest">-JHCON</span> <span class="kelly">2027</span>
       </div>
       <button type="button" class="modal-close-btn" id="drawer-close" style="position: static;"
-        aria-label="Close Menu">&times;</button>
+        aria-label="Close Menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
     </div>
     <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 2rem;">
       <li><a href="#hero" class="drawer-link nav-link">Home</a></li>
@@ -1418,17 +1424,21 @@
 
   <!-- Modal 3: Lightbox Modal -->
   <div class="modal-backdrop" id="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="lightbox-window">
-      <button type="button" class="modal-close-btn" id="lightbox-close-btn"
-        style="position: absolute; top: 1rem; right: 1rem; z-index: 20; background: rgba(0,0,0,0.6); color: #fff; border-color: rgba(255,255,255,0.3);"
-        aria-label="Close Lightbox">&times;</button>
-      <button type="button" class="lightbox-nav-btn lightbox-prev" id="lightbox-prev-btn"
-        aria-label="Previous Image">&#10094;</button>
-      <button type="button" class="lightbox-nav-btn lightbox-next" id="lightbox-next-btn"
-        aria-label="Next Image">&#10095;</button>
+    <button type="button" class="lightbox-close-btn" id="lightbox-close-btn" aria-label="Close Lightbox">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <button type="button" class="lightbox-nav-btn lightbox-prev" id="lightbox-prev-btn"
+      aria-label="Previous Image">&#10094;</button>
+    <button type="button" class="lightbox-nav-btn lightbox-next" id="lightbox-next-btn"
+      aria-label="Next Image">&#10095;</button>
 
+    <div class="lightbox-window">
       <div class="lightbox-img-wrapper">
-        <img id="lightbox-img" src="" alt="Jamshedpur Landmark" width="800" height="500">
+        <img id="lightbox-img" src="" alt="Jamshedpur Landmark">
       </div>
 
       <div class="lightbox-caption-bar">
