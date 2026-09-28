@@ -913,6 +913,112 @@
   color: var(--color-text-muted);
 }
 
+/* Subsection Header & Badges */
+.committee-subsection-header {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.sub-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.76rem;
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.28rem 0.85rem;
+  border-radius: var(--radius-full);
+}
+
+.sub-badge.state-badge {
+  background: rgba(122, 31, 31, 0.08);
+  color: var(--color-maroon);
+  border: 1px solid rgba(122, 31, 31, 0.2);
+}
+
+.sub-badge.conf-badge {
+  background: rgba(27, 77, 46, 0.08);
+  color: var(--color-forest);
+  border: 1px solid rgba(27, 77, 46, 0.2);
+}
+
+.sub-badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-maroon);
+}
+
+.sub-badge-dot.conf-dot {
+  background: var(--color-forest);
+}
+
+.committee-subheading {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: var(--weight-extrabold);
+  color: var(--color-forest-dark);
+  letter-spacing: 0.02em;
+  margin-top: 0.45rem;
+  margin-bottom: 0.35rem;
+}
+
+.committee-subdesc {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  max-width: 620px;
+  margin-inline: auto;
+  line-height: 1.5;
+}
+
+/* State Chapter Core Office Bearers Grid */
+.state-office-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.state-office-card {
+  background: var(--color-white);
+  border-top: 3.5px solid var(--color-maroon);
+  border-color: rgba(122, 31, 31, 0.16);
+  box-shadow: 0 4px 16px rgba(122, 31, 31, 0.06);
+}
+
+.state-office-card:hover {
+  border-color: var(--color-maroon);
+  box-shadow: 0 10px 24px rgba(122, 31, 31, 0.14);
+  transform: translateY(-6px);
+}
+
+.state-avatar-badge {
+  background: linear-gradient(135deg, var(--color-maroon) 0%, #A82828 50%, var(--color-burnt-orange) 100%) !important;
+  box-shadow: 0 6px 18px rgba(122, 31, 31, 0.28) !important;
+}
+
+.state-role {
+  color: var(--color-maroon) !important;
+  background: rgba(122, 31, 31, 0.08) !important;
+  border: 1px solid rgba(122, 31, 31, 0.18) !important;
+}
+
+/* Committee Section Visual Divider */
+.committee-divider-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3.25rem 0 2.5rem;
+  position: relative;
+}
+
+.committee-divider-line {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--color-border) 20%, var(--color-border) 80%, transparent 100%);
+}
+
 /* Core Committee Grid */
 .core-committee-grid {
   display: grid;
@@ -1870,11 +1976,12 @@
     font-size: 0.72rem !important;
   }
 
-  /* ORGANISING COMMITTEE: SHORT & COMPACT ON MOBILE */
+  /* COMMITTEE GRIDS: SHORT & COMPACT ON MOBILE */
+  .state-office-grid,
   .core-committee-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.65rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
   }
 
   .core-card {

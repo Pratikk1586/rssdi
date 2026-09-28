@@ -160,7 +160,7 @@
       <li><a href="#hero" class="drawer-link nav-link">Home</a></li>
       <li><a href="#about" class="drawer-link nav-link">About the Conference</a></li>
       <li><a href="#jamshedpur" class="drawer-link nav-link">Host City (Jamshedpur)</a></li>
-      <li><a href="#committee" class="drawer-link nav-link">Organising Committee</a></li>
+      <li><a href="#committee" class="drawer-link nav-link">Leadership &amp; Committees</a></li>
       <li><a href="#venue" class="drawer-link nav-link">Venue & Location</a></li>
       <li><a href="#registration" class="drawer-link nav-link">Registration Tariffs</a></li>
       <li><a href="#gallery" class="drawer-link nav-link">Destination Gallery</a></li>
@@ -504,26 +504,88 @@
 
         <div class="section-header reveal-on-scroll">
           <div class="section-eyebrow">Leadership & Stewardship</div>
-          <h2 class="section-title">Organising Committee</h2>
+          <h2 class="section-title">Leadership & Committees</h2>
           <p class="section-subtitle">
             Research Society for the Study of Diabetes in India — Jharkhand Chapter
           </p>
         </div>
 
-        <!-- Core Office Bearers (Cover Spotlight) -->
-        <div style="text-align: center; margin-bottom: 1.5rem;" class="reveal-on-scroll">
-          <h3
-            style="font-family: var(--font-display); font-size: 1.35rem; color: var(--color-forest); text-transform: uppercase; letter-spacing: 0.05em;">
-            Core Office Bearers (Cover Spotlight)
+        <!-- ================================================================
+             PART 1: RSSDI JHARKHAND CORE OFFICE BEARERS (State Chapter Leadership)
+             ================================================================ -->
+        <div class="committee-subsection-header reveal-on-scroll">
+          <div class="sub-badge state-badge">
+            <span class="sub-badge-dot"></span> State Chapter Leadership
+          </div>
+          <h3 class="committee-subheading">
+            RSSDI Jharkhand Core Office Bearers
           </h3>
+          <p class="committee-subdesc">
+            Executive leadership guiding the Research Society for the Study of Diabetes in India across Jharkhand state.
+          </p>
         </div>
 
+        <div class="state-office-grid reveal-on-scroll">
+          <!-- Chairman -->
+          <div class="core-card state-office-card">
+            <div class="core-avatar-badge state-avatar-badge" aria-hidden="true">AC</div>
+            <div class="core-role state-role">Chairman</div>
+            <div class="core-name">Dr. Ajay Chhabra</div>
+            <div class="core-affil">RSSDI Jharkhand Chapter</div>
+          </div>
+
+          <!-- Chairman Elect -->
+          <div class="core-card state-office-card">
+            <div class="core-avatar-badge state-avatar-badge" aria-hidden="true">UK</div>
+            <div class="core-role state-role">Chairman Elect</div>
+            <div class="core-name">Dr. Umesh Khan</div>
+            <div class="core-affil">RSSDI Jharkhand Chapter</div>
+          </div>
+
+          <!-- Secretary -->
+          <div class="core-card state-office-card">
+            <div class="core-avatar-badge state-avatar-badge" aria-hidden="true">AP</div>
+            <div class="core-role state-role">Secretary</div>
+            <div class="core-name">Dr. Ajay Patwari</div>
+            <div class="core-affil">RSSDI Jharkhand Chapter</div>
+          </div>
+
+          <!-- Treasurer -->
+          <div class="core-card state-office-card">
+            <div class="core-avatar-badge state-avatar-badge" aria-hidden="true">VJ</div>
+            <div class="core-role state-role">Treasurer</div>
+            <div class="core-name">Dr. V. K. Jagnani</div>
+            <div class="core-affil">RSSDI Jharkhand Chapter</div>
+          </div>
+        </div>
+
+        <!-- Section Divider -->
+        <div class="committee-divider-wrap reveal-on-scroll">
+          <div class="committee-divider-line"></div>
+        </div>
+
+        <!-- ================================================================
+             PART 2: CONFERENCE ORGANISING COMMITTEE (RSSDI-JHCON 2027)
+             ================================================================ -->
+        <div class="committee-subsection-header reveal-on-scroll">
+          <div class="sub-badge conf-badge">
+            <span class="sub-badge-dot conf-dot"></span> RSSDI-JHCON 2027
+          </div>
+          <h3 class="committee-subheading">
+            Conference Organising Committee
+          </h3>
+          <p class="committee-subdesc">
+            Organising team and scientific stewards orchestrating the 6th Annual State Conference at The Cruze, Jamshedpur.
+          </p>
+        </div>
+
+        <!-- Key Conference Organisers Spotlight -->
         <div class="core-committee-grid reveal-on-scroll">
           <div class="core-card">
             <div class="core-avatar-badge" aria-hidden="true">UK</div>
             <div class="core-role">Org. Chairman</div>
             <div class="core-name">Dr. Umesh Khan</div>
-            <div class="core-affil">RSSDI Jharkhand Chapter</div>
+            <div class="core-affil">Conference Organising Committee</div>
           </div>
           <div class="core-card">
             <div class="core-avatar-badge" aria-hidden="true">AV</div>
@@ -554,7 +616,7 @@
         <!-- Mobile Committee Directory Toggle Button (Keeps mobile interface short) -->
         <div class="committee-mobile-toggle-wrap">
           <button type="button" id="toggle-full-committee" class="btn btn-outline btn-sm committee-toggle-btn" aria-expanded="false" aria-controls="full-committee-wrapper">
-            <span id="committee-toggle-text">View Full Committee Directory (26 Roles)</span>
+            <span id="committee-toggle-text">View Full Committee Directory</span>
             <span id="committee-toggle-icon" aria-hidden="true">↓</span>
           </button>
         </div>
@@ -563,7 +625,8 @@
           <!-- Full Committee Filters & Live Search Toolbar -->
           <div class="committee-toolbar reveal-on-scroll">
           <div class="committee-filters" role="tablist" aria-label="Committee Categories">
-            <button type="button" class="filter-btn active" data-filter="all">All Roles (17)</button>
+            <button type="button" class="filter-btn active" data-filter="all">All Roles</button>
+            <button type="button" class="filter-btn" data-filter="state">State Office Bearers</button>
             <button type="button" class="filter-btn" data-filter="patron">Patrons & Advisors</button>
             <button type="button" class="filter-btn" data-filter="leadership">Leadership & Scientific</button>
             <button type="button" class="filter-btn" data-filter="secretariat">Secretariat & Finance</button>
@@ -583,8 +646,25 @@
           </div>
         </div>
 
-        <!-- Full Committee Cards Grid (Exact brochure fidelity) -->
+        <!-- Full Committee Cards Grid -->
         <div class="committee-directory-grid reveal-on-scroll" id="committee-grid">
+          <!-- State Chapter Core Office Bearers (in directory for search & filtering) -->
+          <div class="committee-member-card" data-category="state">
+            <div class="member-role">Chairman (RSSDI Jharkhand)</div>
+            <div class="member-name">Dr. Ajay Chhabra</div>
+          </div>
+          <div class="committee-member-card" data-category="state">
+            <div class="member-role">Chairman Elect (RSSDI Jharkhand)</div>
+            <div class="member-name">Dr. Umesh Khan</div>
+          </div>
+          <div class="committee-member-card" data-category="state">
+            <div class="member-role">Secretary (RSSDI Jharkhand)</div>
+            <div class="member-name">Dr. Ajay Patwari</div>
+          </div>
+          <div class="committee-member-card" data-category="state">
+            <div class="member-role">Treasurer (RSSDI Jharkhand)</div>
+            <div class="member-name">Dr. V. K. Jagnani</div>
+          </div>
           <div class="committee-member-card" data-category="patron">
             <div class="member-role">Patron</div>
             <div class="member-name">Dr. N. K. Das</div>
@@ -1229,7 +1309,7 @@
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About Conference</a></li>
             <li><a href="#jamshedpur">Host City (Jamshedpur)</a></li>
-            <li><a href="#committee">Organising Committee</a></li>
+            <li><a href="#committee">Leadership &amp; Committees</a></li>
             <li><a href="#venue">Venue &amp; Location</a></li>
             <li><a href="#registration">Registration Tariffs</a></li>
             <li><a href="#gallery">Destination Gallery</a></li>
@@ -1239,27 +1319,35 @@
 
         <!-- Col 3: Key Leadership -->
         <div class="footer-leadership-col">
-          <div class="footer-col-title">Core Leadership</div>
+          <div class="footer-col-title">Leadership</div>
+          <div style="font-size: 0.7rem; text-transform: uppercase; color: var(--color-lime); font-weight: 700; margin-bottom: 0.35rem; letter-spacing: 0.05em;">RSSDI Jharkhand State</div>
+          <ul class="footer-leadership-list" style="margin-bottom: 0.85rem;">
+            <li class="footer-leader-item">
+              <span class="leader-role">Chairman</span>
+              <strong class="leader-name">Dr. Ajay Chhabra</strong>
+            </li>
+            <li class="footer-leader-item">
+              <span class="leader-role">Chairman Elect</span>
+              <strong class="leader-name">Dr. Umesh Khan</strong>
+            </li>
+            <li class="footer-leader-item">
+              <span class="leader-role">Secretary</span>
+              <strong class="leader-name">Dr. Ajay Patwari</strong>
+            </li>
+            <li class="footer-leader-item">
+              <span class="leader-role">Treasurer</span>
+              <strong class="leader-name">Dr. V. K. Jagnani</strong>
+            </li>
+          </ul>
+          <div style="font-size: 0.7rem; text-transform: uppercase; color: var(--color-gold); font-weight: 700; margin-bottom: 0.35rem; letter-spacing: 0.05em;">Conference Committee</div>
           <ul class="footer-leadership-list">
             <li class="footer-leader-item">
               <span class="leader-role">Org. Chairman</span>
               <strong class="leader-name">Dr. Umesh Khan</strong>
             </li>
             <li class="footer-leader-item">
-              <span class="leader-role">Chairman Scientific</span>
-              <strong class="leader-name">Dr. A. K. Virmani</strong>
-            </li>
-            <li class="footer-leader-item">
               <span class="leader-role">Org. Secretary</span>
               <strong class="leader-name">Dr. Soumya Sengupta</strong>
-            </li>
-            <li class="footer-leader-item">
-              <span class="leader-role">Org. Treasurer</span>
-              <strong class="leader-name">Dr. N. C. Singhal</strong>
-            </li>
-            <li class="footer-leader-item">
-              <span class="leader-role">Finance</span>
-              <strong class="leader-name">Dr. N. K. Das</strong>
             </li>
           </ul>
         </div>

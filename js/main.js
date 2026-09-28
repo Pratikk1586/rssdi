@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (committeeToggleText) {
         committeeToggleText.textContent = isExpanded
           ? 'Hide Committee Directory'
-          : 'View Full Committee Directory (26 Roles)';
+          : 'View Full Committee Directory';
       }
       if (committeeToggleIcon) {
         committeeToggleIcon.textContent = isExpanded ? '↑' : '↓';
