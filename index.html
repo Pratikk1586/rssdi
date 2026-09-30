@@ -153,8 +153,7 @@
       <div class="brand-title" style="font-size: 1.35rem;">
         <span class="maroon">RSSDI</span><span class="forest">-JHCON</span> <span class="kelly">2027</span>
       </div>
-      <button type="button" class="modal-close-btn" id="drawer-close" style="position: static;"
-        aria-label="Close Menu">
+      <button type="button" class="modal-close-btn" id="drawer-close" style="position: static;" aria-label="Close Menu">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -540,6 +539,14 @@
             <div class="core-affil">RSSDI Jharkhand Chapter</div>
           </div>
 
+          <!-- Immediate Past Chairman -->
+          <div class="core-card state-office-card">
+            <div class="core-avatar-badge state-avatar-badge" aria-hidden="true">VD</div>
+            <div class="core-role state-role">Immediate Past Chairman</div>
+            <div class="core-name">Dr. V. K. Dhandhania</div>
+            <div class="core-affil">RSSDI Jharkhand Chapter</div>
+          </div>
+
           <!-- Chairman Elect -->
           <div class="core-card state-office-card">
             <div class="core-avatar-badge state-avatar-badge" aria-hidden="true">UK</div>
@@ -581,7 +588,8 @@
             Conference Organising Committee
           </h3>
           <p class="committee-subdesc">
-            Organising team and scientific stewards orchestrating the 6th Annual State Conference at The Cruze, Jamshedpur.
+            Organising team and scientific stewards orchestrating the 6th Annual State Conference at The Cruze,
+            Jamshedpur.
           </p>
         </div>
 
@@ -621,7 +629,8 @@
 
         <!-- Mobile Committee Directory Toggle Button (Keeps mobile interface short) -->
         <div class="committee-mobile-toggle-wrap">
-          <button type="button" id="toggle-full-committee" class="btn btn-outline btn-sm committee-toggle-btn" aria-expanded="false" aria-controls="full-committee-wrapper">
+          <button type="button" id="toggle-full-committee" class="btn btn-outline btn-sm committee-toggle-btn"
+            aria-expanded="false" aria-controls="full-committee-wrapper">
             <span id="committee-toggle-text">View Full Committee Directory</span>
             <span id="committee-toggle-icon" aria-hidden="true">↓</span>
           </button>
@@ -630,152 +639,156 @@
         <div class="full-committee-collapsible" id="full-committee-wrapper">
           <!-- Full Committee Filters & Live Search Toolbar -->
           <div class="committee-toolbar reveal-on-scroll">
-          <div class="committee-filters" role="tablist" aria-label="Committee Categories">
-            <button type="button" class="filter-btn active" data-filter="all">All Roles</button>
-            <button type="button" class="filter-btn" data-filter="state">State Office Bearers</button>
-            <button type="button" class="filter-btn" data-filter="patron">Patrons & Advisors</button>
-            <button type="button" class="filter-btn" data-filter="leadership">Leadership & Scientific</button>
-            <button type="button" class="filter-btn" data-filter="secretariat">Secretariat & Finance</button>
-            <button type="button" class="filter-btn" data-filter="operational">Operations & Logistics</button>
+            <div class="committee-filters" role="tablist" aria-label="Committee Categories">
+              <button type="button" class="filter-btn active" data-filter="all">All Roles</button>
+              <button type="button" class="filter-btn" data-filter="state">State Office Bearers</button>
+              <button type="button" class="filter-btn" data-filter="patron">Patrons & Advisors</button>
+              <button type="button" class="filter-btn" data-filter="leadership">Leadership & Scientific</button>
+              <button type="button" class="filter-btn" data-filter="secretariat">Secretariat & Finance</button>
+              <button type="button" class="filter-btn" data-filter="operational">Operations & Logistics</button>
+            </div>
+
+            <div class="committee-search-box">
+              <input type="text" id="committee-search" placeholder="Search committee by name or role..."
+                class="committee-search-input" aria-label="Search Committee Members">
+              <svg class="committee-search-icon" fill="none" stroke="currentColor" stroke-width="2.2"
+                viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <button type="button" id="committee-search-clear" class="committee-search-clear"
+                aria-label="Clear Search">&times;</button>
+            </div>
           </div>
 
-          <div class="committee-search-box">
-            <input type="text" id="committee-search" placeholder="Search committee by name or role..."
-              class="committee-search-input" aria-label="Search Committee Members">
-            <svg class="committee-search-icon" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"
-              aria-hidden="true">
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-            <button type="button" id="committee-search-clear" class="committee-search-clear"
-              aria-label="Clear Search">&times;</button>
+          <!-- Full Committee Cards Grid -->
+          <div class="committee-directory-grid reveal-on-scroll" id="committee-grid">
+            <!-- State Chapter Core Office Bearers (in directory for search & filtering) -->
+            <div class="committee-member-card" data-category="state">
+              <div class="member-role">Chairman (RSSDI Jharkhand)</div>
+              <div class="member-name">Dr. Ajay Chhabra</div>
+            </div>
+            <div class="committee-member-card" data-category="state">
+              <div class="member-role">Immediate Past Chairman (RSSDI Jharkhand)</div>
+              <div class="member-name">Dr. V. K. Dhandhania</div>
+            </div>
+            <div class="committee-member-card" data-category="state">
+              <div class="member-role">Chairman Elect (RSSDI Jharkhand)</div>
+              <div class="member-name">Dr. Umesh Khan</div>
+            </div>
+            <div class="committee-member-card" data-category="state">
+              <div class="member-role">Secretary (RSSDI Jharkhand)</div>
+              <div class="member-name">Dr. Ajay Patwari</div>
+            </div>
+            <div class="committee-member-card" data-category="state">
+              <div class="member-role">Treasurer (RSSDI Jharkhand)</div>
+              <div class="member-name">Dr. V. K. Jagnani</div>
+            </div>
+            <div class="committee-member-card" data-category="patron">
+              <div class="member-role">Patron</div>
+              <div class="member-name">Dr. N. K. Das</div>
+            </div>
+            <div class="committee-member-card" data-category="patron">
+              <div class="member-role">Patron</div>
+              <div class="member-name">Dr. H. S. Paul</div>
+            </div>
+            <div class="committee-member-card" data-category="patron">
+              <div class="member-role">Advisor</div>
+              <div class="member-name">Dr. Dilip Kumar</div>
+            </div>
+            <div class="committee-member-card" data-category="patron">
+              <div class="member-role">Advisor</div>
+              <div class="member-name">Dr. Nirmal Kumar</div>
+            </div>
+            <div class="committee-member-card" data-category="patron">
+              <div class="member-role">Advisor</div>
+              <div class="member-name">Dr. R. L. Agarwal</div>
+            </div>
+            <div class="committee-member-card" data-category="patron">
+              <div class="member-role">Advisor</div>
+              <div class="member-name">Dr. S. L. Srivastav</div>
+            </div>
+            <div class="committee-member-card" data-category="leadership">
+              <div class="member-role">Org. Chairman</div>
+              <div class="member-name">Dr. Umesh Khan</div>
+            </div>
+            <div class="committee-member-card" data-category="leadership">
+              <div class="member-role">Org. Vice Chairman</div>
+              <div class="member-name">Dr. Satish Prasad</div>
+            </div>
+            <div class="committee-member-card" data-category="leadership">
+              <div class="member-role">Org. Vice Chairman</div>
+              <div class="member-name">Dr. Nabidita Mishra</div>
+            </div>
+            <div class="committee-member-card" data-category="leadership">
+              <div class="member-role">Chairman Scientific</div>
+              <div class="member-name">Dr. A. K. Virmani</div>
+            </div>
+            <div class="committee-member-card" data-category="leadership">
+              <div class="member-role">Joint Chairman Scientific</div>
+              <div class="member-name">Dr. Ram Kumar</div>
+            </div>
+            <div class="committee-member-card" data-category="secretariat">
+              <div class="member-role">Chairman Finance</div>
+              <div class="member-name">Dr. N. K. Das</div>
+            </div>
+            <div class="committee-member-card" data-category="secretariat">
+              <div class="member-role">Org. Secretary</div>
+              <div class="member-name">Dr. Soumya Sengupta</div>
+            </div>
+            <div class="committee-member-card" data-category="secretariat">
+              <div class="member-role">Org. Joint Secretary</div>
+              <div class="member-name">Dr. A. K. Jaiswal</div>
+            </div>
+            <div class="committee-member-card" data-category="secretariat">
+              <div class="member-role">Org. Joint Secretary</div>
+              <div class="member-name">Dr. G. Soren</div>
+            </div>
+            <div class="committee-member-card" data-category="secretariat">
+              <div class="member-role">Org. Treasurer</div>
+              <div class="member-name">Dr. N. C. Singhal</div>
+            </div>
+            <div class="committee-member-card" data-category="secretariat">
+              <div class="member-role">Org. Joint Treasurer</div>
+              <div class="member-name">Dr. Rohit Anand</div>
+            </div>
+            <div class="committee-member-card" data-category="operational">
+              <div class="member-role">Chairman Media, Press & Souvenir</div>
+              <div class="member-name">Dr. A. K. Paul</div>
+            </div>
+            <div class="committee-member-card" data-category="operational">
+              <div class="member-role">Chairman Audio, Visual & Hall</div>
+              <div class="member-name">Dr. A. K. Arya</div>
+            </div>
+            <div class="committee-member-card" data-category="operational">
+              <div class="member-role">Chairman Food</div>
+              <div class="member-name">Dr. Dilip Kumar</div>
+            </div>
+            <div class="committee-member-card" data-category="operational">
+              <div class="member-role">Chairman Food</div>
+              <div class="member-name">Dr. Rajesh Thakur</div>
+            </div>
+            <div class="committee-member-card" data-category="operational">
+              <div class="member-role">Chairman Reception Programme</div>
+              <div class="member-name">Dr. Vijay Mundhra</div>
+            </div>
+            <div class="committee-member-card" data-category="operational">
+              <div class="member-role">Chairman Travels</div>
+              <div class="member-name">Dr. S. K. Prasad</div>
+            </div>
+            <div class="committee-member-card" data-category="operational">
+              <div class="member-role">Chairman Accommodation</div>
+              <div class="member-name">Dr. Harprit Singh</div>
+            </div>
+            <div class="committee-member-card" data-category="operational">
+              <div class="member-role">Chairman Registration Committee</div>
+              <div class="member-name">Dr. R. L. Agarwal</div>
+            </div>
+            <div class="committee-member-card" data-category="operational">
+              <div class="member-role">Chairman Registration Committee</div>
+              <div class="member-name">Dr. S. L. Srivastava</div>
+            </div>
           </div>
-        </div>
-
-        <!-- Full Committee Cards Grid -->
-        <div class="committee-directory-grid reveal-on-scroll" id="committee-grid">
-          <!-- State Chapter Core Office Bearers (in directory for search & filtering) -->
-          <div class="committee-member-card" data-category="state">
-            <div class="member-role">Chairman (RSSDI Jharkhand)</div>
-            <div class="member-name">Dr. Ajay Chhabra</div>
-          </div>
-          <div class="committee-member-card" data-category="state">
-            <div class="member-role">Chairman Elect (RSSDI Jharkhand)</div>
-            <div class="member-name">Dr. Umesh Khan</div>
-          </div>
-          <div class="committee-member-card" data-category="state">
-            <div class="member-role">Secretary (RSSDI Jharkhand)</div>
-            <div class="member-name">Dr. Ajay Patwari</div>
-          </div>
-          <div class="committee-member-card" data-category="state">
-            <div class="member-role">Treasurer (RSSDI Jharkhand)</div>
-            <div class="member-name">Dr. V. K. Jagnani</div>
-          </div>
-          <div class="committee-member-card" data-category="patron">
-            <div class="member-role">Patron</div>
-            <div class="member-name">Dr. N. K. Das</div>
-          </div>
-          <div class="committee-member-card" data-category="patron">
-            <div class="member-role">Patron</div>
-            <div class="member-name">Dr. H. S. Paul</div>
-          </div>
-          <div class="committee-member-card" data-category="patron">
-            <div class="member-role">Advisor</div>
-            <div class="member-name">Dr. Dilip Kumar</div>
-          </div>
-          <div class="committee-member-card" data-category="patron">
-            <div class="member-role">Advisor</div>
-            <div class="member-name">Dr. Nirmal Kumar</div>
-          </div>
-          <div class="committee-member-card" data-category="patron">
-            <div class="member-role">Advisor</div>
-            <div class="member-name">Dr. R. L. Agarwal</div>
-          </div>
-          <div class="committee-member-card" data-category="patron">
-            <div class="member-role">Advisor</div>
-            <div class="member-name">Dr. S. L. Srivastav</div>
-          </div>
-          <div class="committee-member-card" data-category="leadership">
-            <div class="member-role">Org. Chairman</div>
-            <div class="member-name">Dr. Umesh Khan</div>
-          </div>
-          <div class="committee-member-card" data-category="leadership">
-            <div class="member-role">Org. Vice Chairman</div>
-            <div class="member-name">Dr. Satish Prasad</div>
-          </div>
-          <div class="committee-member-card" data-category="leadership">
-            <div class="member-role">Org. Vice Chairman</div>
-            <div class="member-name">Dr. Nabidita Mishra</div>
-          </div>
-          <div class="committee-member-card" data-category="leadership">
-            <div class="member-role">Chairman Scientific</div>
-            <div class="member-name">Dr. A. K. Virmani</div>
-          </div>
-          <div class="committee-member-card" data-category="leadership">
-            <div class="member-role">Joint Chairman Scientific</div>
-            <div class="member-name">Dr. Ram Kumar</div>
-          </div>
-          <div class="committee-member-card" data-category="secretariat">
-            <div class="member-role">Chairman Finance</div>
-            <div class="member-name">Dr. N. K. Das</div>
-          </div>
-          <div class="committee-member-card" data-category="secretariat">
-            <div class="member-role">Org. Secretary</div>
-            <div class="member-name">Dr. Soumya Sengupta</div>
-          </div>
-          <div class="committee-member-card" data-category="secretariat">
-            <div class="member-role">Org. Joint Secretary</div>
-            <div class="member-name">Dr. A. K. Jaiswal</div>
-          </div>
-          <div class="committee-member-card" data-category="secretariat">
-            <div class="member-role">Org. Joint Secretary</div>
-            <div class="member-name">Dr. G. Soren</div>
-          </div>
-          <div class="committee-member-card" data-category="secretariat">
-            <div class="member-role">Org. Treasurer</div>
-            <div class="member-name">Dr. N. C. Singhal</div>
-          </div>
-          <div class="committee-member-card" data-category="secretariat">
-            <div class="member-role">Org. Joint Treasurer</div>
-            <div class="member-name">Dr. Rohit Anand</div>
-          </div>
-          <div class="committee-member-card" data-category="operational">
-            <div class="member-role">Chairman Media, Press & Souvenir</div>
-            <div class="member-name">Dr. A. K. Paul</div>
-          </div>
-          <div class="committee-member-card" data-category="operational">
-            <div class="member-role">Chairman Audio, Visual & Hall</div>
-            <div class="member-name">Dr. A. K. Arya</div>
-          </div>
-          <div class="committee-member-card" data-category="operational">
-            <div class="member-role">Chairman Food</div>
-            <div class="member-name">Dr. Dilip Kumar</div>
-          </div>
-          <div class="committee-member-card" data-category="operational">
-            <div class="member-role">Chairman Food</div>
-            <div class="member-name">Dr. Rajesh Thakur</div>
-          </div>
-          <div class="committee-member-card" data-category="operational">
-            <div class="member-role">Chairman Reception Programme</div>
-            <div class="member-name">Dr. Vijay Mundhra</div>
-          </div>
-          <div class="committee-member-card" data-category="operational">
-            <div class="member-role">Chairman Travels</div>
-            <div class="member-name">Dr. S. K. Prasad</div>
-          </div>
-          <div class="committee-member-card" data-category="operational">
-            <div class="member-role">Chairman Accommodation</div>
-            <div class="member-name">Dr. Harprit Singh</div>
-          </div>
-          <div class="committee-member-card" data-category="operational">
-            <div class="member-role">Chairman Registration Committee</div>
-            <div class="member-name">Dr. R. L. Agarwal</div>
-          </div>
-          <div class="committee-member-card" data-category="operational">
-            <div class="member-role">Chairman Registration Committee</div>
-            <div class="member-name">Dr. S. L. Srivastava</div>
-          </div>
-        </div>
         </div>
       </div>
     </section>
@@ -840,8 +853,10 @@
               style="position: absolute; bottom: 1.5rem; left: 1.5rem; margin: 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1.5px solid var(--color-kelly); box-shadow: 0 8px 24px rgba(0,0,0,0.25); text-decoration: none; z-index: 2;">
               <span style="font-size: 1.35rem;" aria-hidden="true">📍</span>
               <div style="text-align: left;">
-                <strong style="display: block; font-size: 0.92rem; color: var(--color-navy); line-height: 1.2;">The Cruze</strong>
-                <span style="font-size: 0.78rem; color: var(--color-forest); font-weight: 600;">Adityapur, Jamshedpur &rarr;</span>
+                <strong style="display: block; font-size: 0.92rem; color: var(--color-navy); line-height: 1.2;">The
+                  Cruze</strong>
+                <span style="font-size: 0.78rem; color: var(--color-forest); font-weight: 600;">Adityapur, Jamshedpur
+                  &rarr;</span>
               </div>
             </a>
           </div>
@@ -867,7 +882,8 @@
         <!-- Prominent Tariff Validity & Revision Notice -->
         <div class="registration-deadline-banner reveal-on-scroll">
           <div class="deadline-banner-icon" aria-hidden="true">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
               <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
               <line x1="16" y1="2" x2="16" y2="6"></line>
               <line x1="8" y1="2" x2="8" y2="6"></line>
@@ -878,7 +894,8 @@
           <div class="deadline-banner-content">
             <div class="deadline-banner-headline">Important Registration Fee Notice</div>
             <p class="deadline-banner-text">
-              The current registration fees are valid until <strong>15 November 2026</strong>. From <strong>16 November 2026</strong> onwards, the registration fees will increase by <strong>₹500</strong>.
+              The current registration fees are valid until <strong>15 November 2026</strong>. From <strong>16 November
+                2026</strong> onwards, the registration fees will increase by <strong>₹500</strong>.
             </p>
           </div>
           <div class="deadline-banner-badge">
@@ -899,11 +916,6 @@
               <span class="tier-note">Valid until 15 Nov 2026</span>
               <span class="tier-subnote">(+₹500 from 16 Nov 2026)</span>
             </div>
-            <ul class="tier-benefits">
-              <li>All plenary & scientific tracks</li>
-              <li>Accredited delegate certification</li>
-              <li>Conference dining & networking</li>
-            </ul>
           </div>
 
           <!-- Category 2: Delegates with Accompanying Person -->
@@ -916,11 +928,6 @@
               <span class="tier-note">Valid until 15 Nov 2026</span>
               <span class="tier-subnote">(+₹500 from 16 Nov 2026)</span>
             </div>
-            <ul class="tier-benefits">
-              <li>All scientific sessions for delegate</li>
-              <li>Inaugural ceremony & cultural evening</li>
-              <li>Banquet dinner & hospitality for both</li>
-            </ul>
           </div>
 
           <!-- Category 3: Postgraduate Student -->
@@ -933,11 +940,6 @@
               <span class="tier-note">Valid until 15 Nov 2026</span>
               <span class="tier-subnote">(+₹500 from 16 Nov 2026)</span>
             </div>
-            <ul class="tier-benefits">
-              <li>Masterclasses & paper sessions</li>
-              <li>Student concession with institutional proof</li>
-              <li>Certificate of scientific attendance</li>
-            </ul>
           </div>
 
         </div>
@@ -982,7 +984,9 @@
             </table>
           </div>
           <div class="registration-table-note">
-            <strong>Important Notice:</strong> The current registration fees are valid until <strong>15 November 2026</strong>. From <strong>16 November 2026</strong> onwards, the registration fees will increase by <strong>₹500</strong> across all categories. Instant processing via secure Razorpay payment gateway.
+            <strong>Important Notice:</strong> The current registration fees are valid until <strong>15 November
+              2026</strong>. From <strong>16 November 2026</strong> onwards, the registration fees will increase by
+            <strong>₹500</strong> across all categories. Instant processing via secure Razorpay payment gateway.
           </div>
         </div>
 
@@ -1283,10 +1287,12 @@
         <div class="footer-brand-col">
           <div class="footer-emblems-row">
             <div class="footer-emblem-badge">
-              <img src="assets/images/emblem_rssdi_circular.png" alt="RSSDI Emblem" width="54" height="54" loading="lazy">
+              <img src="assets/images/emblem_rssdi_circular.png" alt="RSSDI Emblem" width="54" height="54"
+                loading="lazy">
             </div>
             <div class="footer-emblem-badge footer-emblem-badge-rect">
-              <img src="assets/images/emblem_jharkhand_tourism.png" alt="Jharkhand Tourism Emblem" width="70" height="46" loading="lazy">
+              <img src="assets/images/emblem_jharkhand_tourism.png" alt="Jharkhand Tourism Emblem" width="70"
+                height="46" loading="lazy">
             </div>
           </div>
           <div class="footer-brand-header">
@@ -1326,11 +1332,17 @@
         <!-- Col 3: Key Leadership -->
         <div class="footer-leadership-col">
           <div class="footer-col-title">Leadership</div>
-          <div style="font-size: 0.7rem; text-transform: uppercase; color: var(--color-lime); font-weight: 700; margin-bottom: 0.35rem; letter-spacing: 0.05em;">RSSDI Jharkhand State</div>
+          <div
+            style="font-size: 0.7rem; text-transform: uppercase; color: var(--color-lime); font-weight: 700; margin-bottom: 0.35rem; letter-spacing: 0.05em;">
+            RSSDI Jharkhand State</div>
           <ul class="footer-leadership-list" style="margin-bottom: 0.85rem;">
             <li class="footer-leader-item">
               <span class="leader-role">Chairman</span>
               <strong class="leader-name">Dr. Ajay Chhabra</strong>
+            </li>
+            <li class="footer-leader-item">
+              <span class="leader-role">Immediate Past Chairman</span>
+              <strong class="leader-name">Dr. V. K. Dhandhania</strong>
             </li>
             <li class="footer-leader-item">
               <span class="leader-role">Chairman Elect</span>
@@ -1345,7 +1357,9 @@
               <strong class="leader-name">Dr. V. K. Jagnani</strong>
             </li>
           </ul>
-          <div style="font-size: 0.7rem; text-transform: uppercase; color: var(--color-gold); font-weight: 700; margin-bottom: 0.35rem; letter-spacing: 0.05em;">Conference Committee</div>
+          <div
+            style="font-size: 0.7rem; text-transform: uppercase; color: var(--color-gold); font-weight: 700; margin-bottom: 0.35rem; letter-spacing: 0.05em;">
+            Conference Committee</div>
           <ul class="footer-leadership-list">
             <li class="footer-leader-item">
               <span class="leader-role">Org. Chairman</span>
@@ -1382,7 +1396,8 @@
         <div class="footer-partner-bar">
           <div class="partner-bar-left">
             <div class="partner-bar-logo-wrap">
-              <img src="assets/images/nanak_creation_logo.png" alt="Nanak Creation" class="partner-bar-logo" width="42" height="42" loading="lazy">
+              <img src="assets/images/nanak_creation_logo.png" alt="Nanak Creation" class="partner-bar-logo" width="42"
+                height="42" loading="lazy">
             </div>
             <div class="partner-bar-brand">
               <span class="partner-bar-name">Nanak Creation</span>

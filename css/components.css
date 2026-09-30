@@ -432,7 +432,8 @@
   border-radius: var(--radius-square-xs);
   padding: 0.75rem;
   text-align: center;
-  margin-bottom: 1.15rem;
+  margin-top: auto;
+  margin-bottom: 0;
 }
 
 .tier-amount {
