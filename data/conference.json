@@ -101,10 +101,12 @@
       { "role": "Chairman Media, Press & Souvenir", "members": ["Dr. A. K. Paul"], "category": "operational" },
       { "role": "Chairman Audio, Visual & Hall", "members": ["Dr. A. K. Arya"], "category": "operational" },
       { "role": "Chairman Food", "members": ["Dr. Dilip Kumar", "Dr. Rajesh Thakur"], "category": "operational" },
+      { "role": "Food & Hospitality", "members": ["Dr. Ketan Verma"], "category": "operational" },
       { "role": "Chairman Reception Programme", "members": ["Dr. Vijay Mundhra"], "category": "operational" },
       { "role": "Chairman Travels", "members": ["Dr. S. K. Prasad"], "category": "operational" },
       { "role": "Chairman Accommodation", "members": ["Dr. Harprit Singh"], "category": "operational" },
-      { "role": "Chairman Registration Committee", "members": ["Dr. R. L. Agarwal", "Dr. S. L. Srivastava"], "category": "operational" }
+      { "role": "Chairman Registration Committee", "members": ["Dr. R. L. Agarwal", "Dr. S. L. Srivastava"], "category": "operational" },
+      { "role": "Registration Committee", "members": ["Dr. Sunil Singh"], "category": "operational" }
     ]
   },
   "galleryItems": [
